@@ -19,6 +19,7 @@ describe('given default Toggle', () => {
 
   it('should not be toggled yet', () => {
     expect(wrapper.get('button').attributes('data-state')).toBe('off')
+    expect(wrapper.get('button').attributes('data-toggle-state')).toBe('off')
   })
 
   describe('after toggling', () => {
@@ -28,6 +29,7 @@ describe('given default Toggle', () => {
 
     it('should be toggled on', () => {
       expect(wrapper.get('button').attributes('data-state')).toBe('on')
+      expect(wrapper.get('button').attributes('data-toggle-state')).toBe('on')
     })
 
     describe('after toggling again', () => {
@@ -37,6 +39,7 @@ describe('given default Toggle', () => {
 
       it('should be toggled off', () => {
         expect(wrapper.get('button').attributes('data-state')).toBe('off')
+        expect(wrapper.get('button').attributes('data-toggle-state')).toBe('off')
       })
     })
   })

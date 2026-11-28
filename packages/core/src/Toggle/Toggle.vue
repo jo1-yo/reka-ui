@@ -94,6 +94,7 @@ const isFormControl = useFormControl(currentElement)
     :as="as"
     :aria-pressed="modelValue"
     :data-state="dataState"
+    :data-toggle-state="dataState"
     :data-disabled="disabled ? '' : undefined"
     :disabled="disabledAttr(disabled, props.as, props.asChild)"
     v-bind="{ ...scopeIdAttrs, ...$attrs }"

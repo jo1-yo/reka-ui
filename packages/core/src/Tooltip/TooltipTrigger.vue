@@ -121,6 +121,7 @@ function handleClick() {
         rootContext.open.value ? contentId : undefined
       "
       :data-state="rootContext.stateAttribute.value"
+      :data-tooltip-state="rootContext.stateAttribute.value"
       :as="as"
       :as-child="props.asChild"
       :type="$attrs.type ?? (!props.asChild && as === 'button' ? 'button' : undefined)"
